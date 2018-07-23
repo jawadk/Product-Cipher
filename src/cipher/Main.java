@@ -10,14 +10,17 @@ public class Main {
 
     public static void main(String[] args) {
 
+        String plainText;
         List<Integer> textTemp = new ArrayList<Integer>();
 
         /*Scanner is a java class which too take input from console.*/
-        System.out.println("Please enter your Plain text ... !!!");
         Scanner scanner = new Scanner(System.in);
 
-        /*User type store in plainText variable*/
-        String plainText = scanner.nextLine();
+        do {
+            System.out.println("Please enter your Plain text ... !!!");
+            /*User input stored in plainText variable*/
+            plainText = scanner.nextLine();
+        }while (plainText.isEmpty());
 
         /*Encription Method*/
         textTemp = Encription.encryptPlainText(plainText, ciperList, complexCiperList);

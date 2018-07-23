@@ -6,13 +6,15 @@ import java.util.List;
 public class Common {
 
     /*This is number we are using to apply Caesar Cipher*/
-    static final int cipherCountForEnrption = 3;
+    static int cipherCountForEnrption = 3;
 
     /*This method accept 1 character like A and return its ASCII code*/
-    static int convertIntoASCII(final char character){ return (int)character; }
+    static int convertIntoASCII(char character){
+        return (int)character;
+    }
 
     /*This method accept 1 ASCII code like '65' and return its character 'A'*/
-    static char convertIntoChar(final int ascii){
+    static char convertIntoChar(int ascii){
         return (char)ascii;
     }
 
